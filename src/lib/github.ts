@@ -10,6 +10,7 @@ export interface GitHubRepo {
   topics: string[];
   updated_at: string;
   homepage?: string | null;
+  fork: boolean;
 }
 
 export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> {
@@ -19,7 +20,7 @@ export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> 
       Accept: "application/vnd.github.v3+json",
     };
     
-    if (token) {
+    if (token && token !== "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN") {
       headers.Authorization = `token ${token}`;
     }
 
@@ -37,7 +38,8 @@ export async function fetchGitHubRepos(username: string): Promise<GitHubRepo[]> 
     }
 
     const repos: GitHubRepo[] = await res.json();
-    return repos;
+    // Filter out forks and return original repositories only
+    return repos.filter(repo => !repo.fork);
   } catch (error) {
     console.error("Error fetching GitHub repos:", error);
     return [];

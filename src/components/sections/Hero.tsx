@@ -17,7 +17,7 @@ export function Hero() {
       <div className="max-w-screen-2xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center py-20 mt-16 relative z-10">
         
         {/* Availability Badge - Absolute Top Right of Hero Container */}
-        <div className="absolute top-0 right-8 md:top-10 md:right-10 flex items-center gap-3 px-4 py-2 bg-[#1E1610]/80 backdrop-blur-sm border border-[#352515] rounded-full">
+        <div className="absolute top-0 right-8 md:top-10 md:right-10 flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-lg border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] backdrop-saturate-[1.8] rounded-full">
           <span className="relative flex h-2 w-2">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C47C3A] opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C47C3A]"></span>

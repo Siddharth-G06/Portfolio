@@ -43,7 +43,7 @@ export function Connect() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address..." 
-                className="flex-1 bg-[#1E1610] border border-[#352515] text-[#F0E8D8] px-6 py-4 outline-none focus:border-[#C47C3A] transition-colors font-sans font-light placeholder:text-[#5A4028]"
+                className="flex-1 bg-white/5 backdrop-blur-md border border-white/10 text-[#F0E8D8] px-6 py-4 outline-none focus:border-[#C47C3A] hover:bg-white/10 transition-all duration-300 font-sans font-light placeholder:text-[#8A7A6A]/50 focus:shadow-[0_0_20px_rgba(196,124,58,0.1)]"
               />
               <button 
                 type="submit" 

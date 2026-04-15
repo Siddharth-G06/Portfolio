@@ -44,7 +44,7 @@ export function ProjectCard({
         borderColor: "#C47C3A",
         boxShadow: "0 8px 30px rgba(196, 124, 58, 0.18)"
       }}
-      className={`bg-[#26190F] border border-[#352515] border-l-[3px] border-l-[#C47C3A] rounded-[6px] p-6 flex flex-col justify-between transition-none ${className}`}
+      className={`bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] backdrop-saturate-[1.8] border-l-[3px] border-l-[#C47C3A] rounded-[6px] p-6 flex flex-col justify-between transition-all duration-300 ${className}`}
     >
       <div className="flex flex-col gap-4">
         <h3 className="text-[22px] font-heading text-[#F0E8D8] font-medium leading-tight">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Navbar() {
   return (
-    <header className="fixed top-0 inset-x-0 z-50 bg-[#17130d]/80 backdrop-blur-xl border-b border-white/5">
+    <header className="fixed top-0 inset-x-0 z-50 bg-white/5 backdrop-blur-lg border-b border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] backdrop-saturate-[1.8] supports-[backdrop-filter]:bg-white/5">
       <div className="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
         <div className="text-2xl font-heading font-bold text-[#ebe1d6] tracking-tighter">
           SIDDHARTH.

@@ -43,7 +43,7 @@ export function About() {
           </ScrollReveal>
           
           <ScrollReveal delay={0.2}>
-            <div className="bg-[#26190F] border border-[#352515] p-10 h-full flex flex-col justify-center">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)] backdrop-saturate-[1.8] p-10 h-full flex flex-col justify-center rounded-[4px]">
               <h3 className="text-2xl font-heading text-[#F0E8D8] mb-6">Core Competencies</h3>
               
               <div className="space-y-8">
