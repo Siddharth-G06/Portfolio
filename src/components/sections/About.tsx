@@ -18,25 +18,25 @@ export function About() {
               </h2>
               <div className="space-y-6 text-[#8A7A6A] font-sans font-light leading-relaxed text-lg">
                 <p>
-                  I’m Siddharth, someone who enjoys building the logic behind intelligent systems. My focus lies in backend engineering and machine learning, where I design scalable pipelines, experiment with models, and refine systems for performance and clarity.
+                  I'm Siddharth G, an AI & Data Science undergraduate pursuing a dual degree at Shiv Nadar University Chennai and IIT Madras. I build end-to-end ML systems, LLM-powered backends, and data pipelines that solve real-world problems.
                 </p>
                 <p>
-                  I prefer understanding problems from first principles, keeping solutions clean, modular, and purposeful. Most of my work revolves around creating data-driven systems that are not just technically strong, but genuinely useful in real-world contexts.
+                  My work spans RAG pipelines, graph-based memory architectures, semantic search systems, and scalable API design — always with a bias toward clean, purposeful engineering over complexity for its own sake.
                 </p>
               </div>
               
               <div className="mt-12 grid grid-cols-2 gap-8 pt-8 border-t border-[#352515]">
                 <div>
                   <div className="text-4xl font-heading text-[#F0E8D8] mb-2 flex items-center">
-                    <StatCounter end={3} suffix="+" />
+                    <StatCounter end={5} suffix="+" />
                   </div>
-                  <div className="text-[#8A7A6A] font-sans text-sm tracking-wide uppercase">Years Experience</div>
+                  <div className="text-[#8A7A6A] font-sans text-sm tracking-wide uppercase">Projects Built</div>
                 </div>
                 <div>
                   <div className="text-4xl font-heading text-[#F0E8D8] mb-2 flex items-center">
-                    <StatCounter end={15} suffix="+" />
+                    <StatCounter end={2} suffix="" />
                   </div>
-                  <div className="text-[#8A7A6A] font-sans text-sm tracking-wide uppercase">Projects Delivered</div>
+                  <div className="text-[#8A7A6A] font-sans text-sm tracking-wide uppercase">Degrees Pursuing</div>
                 </div>
               </div>
             </div>
@@ -48,9 +48,9 @@ export function About() {
               
               <div className="space-y-8">
                 {[
-                  { title: "Machine Learning", skills: "Experimentation, Applied AI Models, LLM Integrations, NLP" },
-                  { title: "Backend Systems", skills: "Python, Next.js, API Architecture, Relational Databases" },
-                  { title: "Data Pipelines", skills: "System Scalability, Processing Jobs, Task Orchestration" },
+                  { title: "AI & ML Systems", skills: "LLMs, RAG Pipelines, SBERT, FAISS, NLP, OCR, PyTorch, TensorFlow" },
+                  { title: "Backend & APIs", skills: "Python, FastAPI, Flask, PostgreSQL, Supabase, Neo4j, ChromaDB" },
+                  { title: "Data & DevOps", skills: "scikit-learn, XGBoost, GitHub Actions CI/CD, Docker, AWS, SQL" },
                 ].map((area, i) => (
                   <div key={i} className="group">
                     <div className="flex items-center gap-4 mb-2">
